@@ -67,7 +67,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
 @Composable
 fun MainScreen(games: List<Game>) {
     val context = LocalContext.current
@@ -157,7 +156,6 @@ fun MainScreen(games: List<Game>) {
         }
     }
 }
-
 @Composable
 fun GameCardLarge(
     game: Game,

@@ -66,7 +66,6 @@ class GameDetailActivity : ComponentActivity() {
     companion object {
         const val EXTRA_GAME = "extra_game"
     }
-
     @Suppress("DEPRECATION")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -88,7 +87,6 @@ class GameDetailActivity : ComponentActivity() {
         }
     }
 }
-
 @SuppressLint("DefaultLocale")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -104,7 +102,6 @@ fun GameDetailScreen(
     val bottomSheetState = rememberModalBottomSheetState(
         skipPartiallyExpanded = true
     )
-
     Scaffold(
         topBar = {
             TopAppBar(
@@ -127,7 +124,7 @@ fun GameDetailScreen(
                 }
             )
         }
-    ) { padding ->
+    ) {padding ->
         Box(
             modifier = Modifier
                 .padding(padding)
@@ -201,7 +198,6 @@ fun GameDetailScreen(
         }
     }
 }
-
 @SuppressLint("DefaultLocale")
 @Composable
 fun ItemRow(
@@ -327,7 +323,6 @@ fun ItemBottomSheetContent(
         }
     }
 }
-
 @Preview(showBackground = true)
 @Composable
 fun ItemRowPreview() {
@@ -338,7 +333,6 @@ fun ItemRowPreview() {
         )
     }
 }
-
 @Preview(showBackground = true)
 @Composable
 fun ItemBottomSheetContentPreview() {
